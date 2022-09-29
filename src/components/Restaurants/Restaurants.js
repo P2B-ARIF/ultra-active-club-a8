@@ -16,7 +16,7 @@ const Restaurants = () => {
             .then(res => res.json())
             .then(data => setCards(data))
     }, [])
-
+ 
     // event handle using remaining time
 
     const [remaining, setRemaining] = useState(0)
