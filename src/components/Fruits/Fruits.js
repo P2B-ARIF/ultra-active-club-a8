@@ -11,7 +11,7 @@ const Fruits = (props) => {
   useEffect(()=>{
     const btn = document.getElementById('btn-cart')
     btn.addEventListener('click', function () {
-        btn.innerText = "SELECTED";
+        btn.innerText = "ADDED";
         btn.style.backgroundColor = "green";
     })
 
