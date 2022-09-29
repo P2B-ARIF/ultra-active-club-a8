@@ -39,7 +39,7 @@ const Cart = ({ remaining }) => {
 
     // toast function 
 
-    const notify = () => toast("Wow so easy!");
+    const notify = () => toast("Your Order Submitted....",{position: "top-center" });
 
     return (
         <div className='m-cart'>
@@ -93,7 +93,8 @@ const Cart = ({ remaining }) => {
             </div>
             {/* toast section  */}
             <div className="btn">
-                <button onClick={()=> notify()}>Activity Completed</button>
+                <button onClick={notify}>Activity Completed</button>
+                <ToastContainer/>
             </div>
         </div>
     );
