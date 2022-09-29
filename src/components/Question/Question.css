@@ -12,6 +12,10 @@
     background-color: black;
     padding: 1rem 0;
 }
+.head-ans .ans h4{
+    color: rgb(183, 33, 6);
+    margin: 0;
+}
 .footer p{
     text-align: center;
     font-weight: 600;

@@ -9,12 +9,15 @@ const Restaurants = () => {
 
     const [cards, setCards] = useState([])
 
+    // fake db generate
+
     useEffect(() => {
         fetch('fruits-data.json')
             .then(res => res.json())
             .then(data => setCards(data))
     }, [])
 
+    // event handle using remaining time
 
     const [remaining, setRemaining] = useState(0)
     const addToCart = (props) => {
@@ -25,7 +28,7 @@ const Restaurants = () => {
 
 
 
-
+    // main dad of child :)
     return (
         <section>
             <div className='main-items'>

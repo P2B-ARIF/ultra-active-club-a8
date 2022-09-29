@@ -53,30 +53,27 @@
 }
 @media (max-width: 850px) {
   .fruits {
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
   }
- 
 }
 
 @media (max-width: 786px) {
   .fruits {
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-  } 
+  }
 
-  .main-items{
-display: block;
-justify-content: center;
+  .main-items {
+    display: block;
+    justify-content: center;
   }
   .head-items {
     width: 100%;
   }
-.main-items .cart {
-  width: 100%;
-}
+  .main-items .cart {
+    width: 100%;
+  }
 }

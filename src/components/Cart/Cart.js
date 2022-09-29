@@ -7,7 +7,7 @@ const Cart = ({ remaining }) => {
 
 
     useEffect(() => {
-        const newRemaining = remaining + " secounds"
+        const newRemaining = remaining + " seconds"
         const remain = document.getElementById('remain');
         remain.innerText = newRemaining;
     }, [remaining])
@@ -18,13 +18,19 @@ const Cart = ({ remaining }) => {
 
 
         let time = {};
-       time = num;
+        time = num;
 
-       const getTime = localStorage.getItem('break')
-       console.log(getTime);
+        const getTime = localStorage.getItem('break')
+        console.log(getTime);
         localStorage.setItem('break', JSON.stringify(time));
     }
 
+    useEffect(() => {
+        const wait = document.getElementById('wait')
+
+        const getBreakTime = localStorage.getItem('break')
+        wait.innerText = getBreakTime + " seconds";
+    },)
 
 
     return (
@@ -52,6 +58,9 @@ const Cart = ({ remaining }) => {
                     <span>Age</span>
                 </div>
             </div>
+
+            {/* break section  */}
+
             <h3>Add A Break</h3>
             <div className="timer">
                 <span onClick={() => breakTime(10)}>10s</span>
@@ -60,6 +69,8 @@ const Cart = ({ remaining }) => {
                 <span onClick={() => breakTime(40)}>40s</span>
                 <span onClick={() => breakTime(50)}>50s</span>
             </div>
+
+            {/* remaining section */}
             <h3 id='h3'>Remaining Time</h3>
             <div className="count-down">
                 <div className='count'>
@@ -72,6 +83,7 @@ const Cart = ({ remaining }) => {
 
                 </div>
             </div>
+            {/* toast section  */}
             <div className="btn">
                 <button>Activity Completed</button>
             </div>

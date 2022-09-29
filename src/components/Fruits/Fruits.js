@@ -8,17 +8,19 @@ const Fruits = (props) => {
 
 
 
-  useEffect(()=>{
-    const btn = document.getElementById('btn-cart')
-    btn.addEventListener('click', function () {
-        btn.innerText = "ADDED";
-        btn.style.backgroundColor = "green";
-    })
+    // click to change card button innerText 
+    //  but i can't ;) 
+    useEffect(() => {
+        const btn = document.getElementById('btn-cart')
+        btn.addEventListener('click', function () {
+            btn.innerText = "ADDED";
+            btn.style.backgroundColor = "green";
+        })
 
-  },[])
+    }, [])
 
 
-    
+    // all cards added in ui 
     return (
         <div>
             <div className="card">
