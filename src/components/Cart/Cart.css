@@ -18,6 +18,8 @@ sub {
   font-weight: 500;
 }
 .self-details h3 {
+  text-align: center;
+
   line-height: 1;
   margin: 0;
 }

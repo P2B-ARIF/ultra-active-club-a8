@@ -19,27 +19,23 @@ const Cart = ({ remaining }) => {
     function breakTime(num) {
         const wait = document.getElementById('wait')
         wait.innerText = num + " seconds";
+        console.log(num);
+        // setItem localStorage
 
-
-        let time = {};
-        time = num;
-
-        const getTime = localStorage.getItem('break')
-        console.log(getTime);
-        localStorage.setItem('break', JSON.stringify(time));
+        localStorage.setItem('break', JSON.stringify(num));
     }
 
+    // getItem localStorage
     useEffect(() => {
         const wait = document.getElementById('wait')
-
         const getBreakTime = localStorage.getItem('break')
-        wait.innerText = getBreakTime + " seconds";
+        wait.innerText = getBreakTime === null ? 0 + " seconds" : getBreakTime + " seconds";
     },)
 
 
     // toast function 
 
-    const notify = () => toast("Your Order Submitted....",{position: "top-center" });
+    const notify = () => toast("Your Order Submitted....", { position: "top-center" });
 
     return (
         <div className='m-cart'>
@@ -58,7 +54,7 @@ const Cart = ({ remaining }) => {
                     <span>Weight</span>
                 </div>
                 <div>
-                    <h3>6.5<sub>kg</sub> </h3>
+                    <h3>6.5</h3>
                     <span>Height</span>
                 </div>
                 <div>
@@ -94,7 +90,7 @@ const Cart = ({ remaining }) => {
             {/* toast section  */}
             <div className="btn">
                 <button onClick={notify}>Activity Completed</button>
-                <ToastContainer/>
+                <ToastContainer />
             </div>
         </div>
     );
