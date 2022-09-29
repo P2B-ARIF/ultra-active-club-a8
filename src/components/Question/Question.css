@@ -1,0 +1,18 @@
+.head-ans{
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 2rem 15px;
+   text-align: center;
+}
+.head-ans .ans{
+    text-align: left;
+}
+.footer{
+    color: rgb(174, 173, 173);
+    background-color: black;
+    padding: 1rem 0;
+}
+.footer p{
+    text-align: center;
+    font-weight: 600;
+}
