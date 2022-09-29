@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import './Cart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation } from '@fortawesome/free-solid-svg-icons'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Cart = ({ remaining }) => {
 
@@ -32,6 +36,10 @@ const Cart = ({ remaining }) => {
         wait.innerText = getBreakTime + " seconds";
     },)
 
+
+    // toast function 
+
+    const notify = () => toast("Wow so easy!");
 
     return (
         <div className='m-cart'>
@@ -85,7 +93,7 @@ const Cart = ({ remaining }) => {
             </div>
             {/* toast section  */}
             <div className="btn">
-                <button>Activity Completed</button>
+                <button onClick={()=> notify()}>Activity Completed</button>
             </div>
         </div>
     );

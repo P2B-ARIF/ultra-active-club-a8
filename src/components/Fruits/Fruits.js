@@ -9,6 +9,7 @@ const Fruits = (props) => {
 
 
     // click to change card button innerText 
+
     //  but i can't ;) 
     useEffect(() => {
         const btn = document.getElementById('btn-cart')
@@ -20,6 +21,7 @@ const Fruits = (props) => {
     }, [])
 
 
+    
     // all cards added in ui 
     return (
         <div>
