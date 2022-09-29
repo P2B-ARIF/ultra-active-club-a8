@@ -1,0 +1,105 @@
+.m-cart {
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+
+.self-details {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
+}
+sub {
+  color: gray;
+  font-weight: 500;
+}
+.self-details h3 {
+  line-height: 1;
+  margin: 0;
+}
+.self-details span {
+  line-height: 0;
+}
+.timer {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+}
+.timer span {
+  background-color: rgb(214, 249, 249);
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid skyblue;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.timer span:focus {
+  background-color: rgb(243, 87, 183);
+  color: white;
+}
+.timer span:hover {
+  background-color: rgb(243, 87, 183);
+  color: white;
+}
+.count-down {
+  width: 100%;
+}
+#h3 {
+  margin: 0;
+  margin-top: 1rem;
+}
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+.count span {
+  text-align: right;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile .name h4 {
+  margin: 0 0 0 5px;
+}
+.profile .name p {
+  margin: 5px;
+}
+.c-image {
+  width: 50px;
+  height: 50px;
+}
+.c-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+}
+
+.btn button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
